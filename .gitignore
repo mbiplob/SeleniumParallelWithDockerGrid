@@ -1,7 +1,9 @@
 bin/
 /target/
+/test-output/
 /.idea/
 *.iml
+*.DS_Store
 *.log
 *.class
 *.html

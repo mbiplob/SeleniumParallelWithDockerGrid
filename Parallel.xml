@@ -1,28 +1,25 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel test runs" parallel="tests" thread-count="4">
-    <listeners>
-        <listener class-name="elk.kibana.TestListener"></listener>
-    </listeners>
 
     <test name="T_01">
         <classes>
-            <class name="second.attempt.TestOne" ></class>
+            <class name="us.biplob.TestOne" ></class>
         </classes>
     </test>
 
     <test name="T_02">
         <classes>
-            <class name="second.attempt.TestTwo" ></class>
+            <class name="us.biplob.TestTwo" ></class>
         </classes>
     </test>
     <test name="T_03">
         <classes>
-            <class name="second.attempt.TestThree" ></class>
+            <class name="us.biplob.TestThree" ></class>
         </classes>
     </test>
     <test name="T_04">
         <classes>
-            <class name="second.attempt.TestFour" ></class>
+            <class name="us.biplob.TestFour" ></class>
         </classes>
     </test>
 

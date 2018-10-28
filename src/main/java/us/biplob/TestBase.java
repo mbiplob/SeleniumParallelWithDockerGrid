@@ -15,10 +15,6 @@ import java.time.LocalDateTime;
 
 public class TestBase {
 
-
-    //Parallel Test Classes
-    // http://blog.wedoqa.com/2013/07/how-to-run-parallel-tests-with-selenium-webdriver-and-testng-2/
-
     //protected ThreadLocal<WebDriver> threadDriver = null;
     protected ThreadLocal<RemoteWebDriver> threadDriver = null;
     private LocalDateTime startTime;
@@ -36,7 +32,7 @@ public class TestBase {
         threadDriver = new ThreadLocal<>();
         ChromeOptions op = new ChromeOptions();
         op.setHeadless(false);
-        System.setProperty("webdriver.chrome.driver", "/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/biplob/Projects/drivers/chromedriver");
         threadDriver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),op));
         //threadDriver.set(new ChromeDriver());
     }

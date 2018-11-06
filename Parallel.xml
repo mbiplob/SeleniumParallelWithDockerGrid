@@ -1,25 +1,71 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Parallel test runs" parallel="tests" thread-count="4" >
+<suite name="Parallel test runs" parallel="tests" thread-count="6" >
 
-    <test name="T_01">
+    <listeners>
+        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter" />
+    </listeners>
+
+    <test name="TEST ONE">
         <classes>
             <class name="us.biplob.TestOne" ></class>
         </classes>
     </test>
 
-    <test name="T_02">
+    <test name="TEST TWO">
         <classes>
             <class name="us.biplob.TestTwo" ></class>
         </classes>
     </test>
-    <test name="T_03">
+    <test name="TEST THREE">
         <classes>
             <class name="us.biplob.TestThree" ></class>
         </classes>
     </test>
-    <test name="T_04">
+    <test name="TEST FOUR">
         <classes>
             <class name="us.biplob.TestFour" ></class>
+        </classes>
+    </test>
+
+    <test name="TEST FIVE">
+        <classes>
+            <class name="us.biplob.TestFive" ></class>
+        </classes>
+    </test>
+
+    <test name="TEST SIX">
+        <classes>
+            <class name="us.biplob.TestSix" ></class>
+        </classes>
+    </test>
+
+    <test name="TEST SEVEN">
+        <classes>
+            <class name="us.biplob.TestSeven" ></class>
+        </classes>
+    </test>
+
+    <test name="TEST EIGHT">
+        <classes>
+            <class name="us.biplob.TestEight" ></class>
+        </classes>
+    </test>
+
+    <test name="TEST NINE">
+        <classes>
+            <class name="us.biplob.TestNine" ></class>
+        </classes>
+    </test>
+
+    <test name="TEST TEN">
+        <classes>
+            <class name="us.biplob.TestTen" ></class>
+        </classes>
+    </test>
+
+    <test name="TEST ELEVEN">
+        <classes>
+            <class name="us.biplob.TestEleven" ></class>
         </classes>
     </test>
 

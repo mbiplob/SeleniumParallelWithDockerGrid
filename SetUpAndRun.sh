@@ -2,15 +2,18 @@
 #Getting the Grid Up and Running
 docker-compose up -d
 
-#Scaling Chrome Nodes to Five
-docker-compose scale chromenode=5
+#Scaling Chrome Nodes to Nine
+docker-compose scale chromenode=7
 
-sleep 5
+
 #Scaling FireFox Nodes to Five
 #docker service scale firefoxnode = 5
 
 #Doing a maven Clean and Install
-mvn clean install
+mvn clean
+mvn install
+
+sleep 10
 #Running The main Class
 mvn exec:java \
     -Dexec.cleanupDaemonThreads=false \
